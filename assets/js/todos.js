@@ -4,7 +4,7 @@
 // if the elements are children of a selected parent element.
 
 //For instance, this statement shows an example of a ul element as the parent
-// who then turns and gives a function to every li under her.
+// who then in turns gives a function to every li under her.
 $("ul").on("click", "li", function(){
 	$(this).toggleClass("completed")
 });
@@ -20,6 +20,6 @@ $("input[type='text']").keypress(function(event){
 	if(event.which === 13){
 		var todoText = $(this).val();
 		$(this).val("");
-		$("ul").append("<li><span>X </span>" + todoText + "</li>");
+		$("ul").append("<li><span><i class='fa fa-trash-o' aria-hidden='true'></i> </span>" + todoText + "</li>");
 	}
 });
